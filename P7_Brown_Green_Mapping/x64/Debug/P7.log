@@ -1,0 +1,16 @@
+﻿  Source.cpp
+C:\Users\bjark\source\repos\P7\P7\Source.cpp(214,50): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\bjark\source\repos\P7\P7\Source.cpp(254,69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\bjark\source\repos\P7\P7\Source.cpp(290,79): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\bjark\source\repos\P7\P7\Source.cpp(290,50): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\bjark\source\repos\P7\P7\Source.cpp(314,35): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\bjark\source\repos\P7\P7\Source.cpp(315,35): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  P7.vcxproj -> C:\Users\bjark\source\repos\P7\x64\Debug\P7.exe
