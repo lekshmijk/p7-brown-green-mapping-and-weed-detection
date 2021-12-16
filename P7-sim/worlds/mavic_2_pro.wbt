@@ -1,0 +1,123 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+    "This demonstration shows a DJI Mavic 2 PRO flying over a rural area."
+    "After the drone has taken off, you can control it with the keyboard of your computer."
+  ]
+  title "DJI Mavic 2 PRO demo"
+  basicTimeStep 8
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.06253785060383286 0.883424867897794 0.4643807920463744 3.3800606502138297
+  position -0.9762652269226453 7.3205140822506545 -5.012069691058464
+  near 0.2
+  follow "Mavic 2 PRO"
+  followSmoothness 0.2
+}
+TexturedBackground {
+  luminosity 3
+}
+TexturedBackgroundLight {
+}
+Floor {
+  translation 0 -0.1 0
+  size 1000 1000
+  tileSize 6 6
+  appearance SandyGround {
+    colorOverride 0.470588 0.290196 0.0196078
+    IBLStrength 0
+  }
+}
+Wall {
+  translation 15 0 5
+  size 0.75 0.1 0.75
+  appearance Roughcast {
+    colorOverride 0.333333 0.666667 0
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 5 0 15
+  name "wall(2)"
+  size 0.75 0.1 0.75
+  appearance Roughcast {
+    colorOverride 0.333333 0.666667 0
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 25 0 5
+  name "wall(3)"
+  size 0.75 0.1 0.75
+  appearance Roughcast {
+    colorOverride 0.333333 0.666667 0
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 15 0 25
+  name "wall(1)"
+  size 0.75 0.1 0.75
+  appearance Roughcast {
+    colorOverride 0.333333 0.666667 0
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 25 0 25
+  name "wall(4)"
+  size 0.75 0.1 0.75
+  appearance Roughcast {
+    colorOverride 0.333333 0.666667 0
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+SquareManhole {
+  translation 0 -0.03 0
+}
+Mavic2Pro {
+  hidden position_0_0 1.3391103014074532e-09
+  hidden linearVelocity_0 1.0880483362909319e-06 3.9658784853285396e-05 1.4655569569168054e-09
+  hidden angularVelocity_0 7.21727167167617e-07 -2.836224565918315e-07 -8.35992420549887e-05
+  hidden position_6_0 -7.926656858892045e-06
+  hidden linearVelocity_6 3.6017519595362408e-06 2.9208761146915673e-05 5.8619531841619954e-08
+  hidden angularVelocity_6 7.206422863667008e-07 -2.6807328144136476e-07 -8.359924141823421e-05
+  hidden rotation_7 0 -1 0 7.926633444691921e-06
+  hidden position_7_0 -8.069044099556777e-08
+  hidden linearVelocity_7 3.1809652031921484e-06 2.9328241807743612e-05 5.463490057780198e-08
+  hidden angularVelocity_7 7.206638171412575e-07 -2.6808438318809343e-07 -7.927842085180262e-05
+  hidden rotation_8 -0.9999999999999999 0 0 7.884953353001448e-08
+  hidden linearVelocity_8 2.5010921557972576e-06 2.9216692386708083e-05 4.883071940216763e-08
+  hidden angularVelocity_8 7.218267452868336e-07 -2.68003230961842e-07 -7.927842084325682e-05
+  translation -0.009944252610713078 0.08574057189202032 5.368988704248898e-07
+  rotation 0.9987880673883051 0.034799829366571784 -0.0348047169043508 -1.5720063028689257
+  controller "P7simsource2"
+  cameraSlot [
+    Camera {
+      translation 0 0.01 -3.67318e-08
+      rotation -1 0 0 1.5708
+      width 400
+      height 240
+      near 0.2
+    }
+  ]
+}
+Field {
+  translation 20 0 20
+  size 40 40
+}
